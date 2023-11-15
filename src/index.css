@@ -1,13 +1,141 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #fffbfb;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  background-color: #1b1b1b;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+ul {
+  list-style: none;
+}
+
+@layer utilities {
+  .btn-white {
+    @apply px-5 py-2 rounded-lg font-semibold p3 bg-white border-2 border-white  text-primary-black duration-300 hover:shadow-2xl max-sm:px-3 max-sm:py-2;
+  }
+
+  .btn-trans {
+    @apply px-5 py-2 rounded-lg font-semibold p3 bg-transparent border-2 border-white text-white duration-300 hover:bg-white hover:text-primary-black hover:shadow-2xl max-sm:px-3 max-sm:py-2;
+  }
+
+  .max-cp {
+    @apply m-auto max-w-[1440px] px-6 md:px-8 lg:px-12 2xl:px-20 py-12 lg:py-16 2xl:py-24;
+  }
+
+  .max-c {
+    @apply m-auto max-w-[1440px];
+  }
+
+  .p-x {
+    @apply px-6 md:px-8 lg:px-12 2xl:px-20;
+  }
+
+  .p-y {
+    @apply py-12 lg:py-16 2xl:py-24;
+  }
+
+  .p-t {
+    @apply pt-12 lg:pt-16 2xl:pt-24;
+  }
+
+  .p-b {
+    @apply pb-12 lg:pb-16 2xl:pb-24;
+  }
+
+  .h1 {
+    @apply text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl font-bold;
+  }
+
+  .h2 {
+    @apply text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-bold;
+  }
+
+  .h3 {
+    @apply text-lg sm:text-xl lg:text-2xl 2xl:text-3xl;
+  }
+
+  .h4 {
+    @apply text-base sm:text-lg lg:text-xl 2xl:text-2xl;
+  }
+
+  .p1 {
+    @apply text-base md:text-lg;
+  }
+
+  .p2 {
+    @apply text-sm md:text-base 2xl:text-lg;
+  }
+
+  .p3 {
+    @apply text-sm xl:text-base;
+  }
+
+  .p4 {
+    @apply text-xs xl:text-sm;
+  }
+
+  .flexCenter {
+    @apply flex justify-center items-center;
+  }
+
+  .flexBetween {
+    @apply flex justify-between items-center;
+  }
+
+  .flexStart {
+    @apply flex justify-start items-start;
+  }
+
+  .flexEnd {
+    @apply flex justify-end items-end;
+  }
+
+  .flexRowCol {
+    @apply flex flex-col md:flex-row;
+  }
+
+  .flexCol {
+    @apply flex flex-col;
+  }
+
+  .flexRow {
+    @apply flex flex-row;
+  }
+
+  .flexCenterCol {
+    @apply flex justify-center items-center flex-col;
+  }
+
+  .flexStartCol {
+    @apply flex justify-center items-start flex-col;
+  }
+
+  .input {
+    @apply px-4 py-2 p4 rounded-lg placeholder-primary-black placeholder-opacity-70 font-medium p2 bg-primary-gray w-full h-11 text-black duration-300 max-sm:px-2 max-sm:h-10;
+  }
+
+  .filter {
+    @apply px-3 py-1 p4 rounded-lg placeholder-primary-black placeholder-opacity-70 font-medium p2 bg-primary-black border-2 border-primary-gray w-full h-11 text-white duration-300 max-sm:px-2 max-sm:h-9;
+  }
 }
