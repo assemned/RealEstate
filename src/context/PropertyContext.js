@@ -37,7 +37,7 @@ export const PropertyContextProvider = ({ children }) => {
     const fetchProperties = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:4000/api/properties"
+          "https://real-estate-server-b8bv.onrender.com/api/properties"
         );
 
         dispatch({ type: "SET_PROPERTIES", payload: response.data });

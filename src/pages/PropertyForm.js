@@ -62,7 +62,7 @@ const PropertyForm = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/properties",
+        "https://real-estate-server-b8bv.onrender.com/api/properties",
         formData,
         { headers: { Authorization: `Bearer ${user.token}` } }
       );

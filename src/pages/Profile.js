@@ -16,7 +16,7 @@ const Profile = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4000/api/user/${id}`
+          `https://real-estate-server-b8bv.onrender.com/api/user/${id}`
         );
         setUser(response.data);
       } catch (error) {
@@ -35,7 +35,7 @@ const Profile = () => {
             <img
               src={
                 user.logo
-                  ? `http://localhost:4000/images/${user.logo}`
+                  ? `https://real-estate-server-b8bv.onrender.com/images/${user.logo}`
                   : images.user
               }
               alt="Profile"

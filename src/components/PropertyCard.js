@@ -8,7 +8,7 @@ const PropertyCard = ({ property }) => {
   return (
     <div className=" rounded-lg bg-primary-dark shadow-xl">
       <img
-        src={`http://localhost:4000/images/${property.image}`}
+        src={`https://real-estate-server-b8bv.onrender.com/images/${property.image}`}
         alt="Property"
         className="w-full h-72 rounded-lg object-cover"
       />

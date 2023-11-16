@@ -13,7 +13,7 @@ export const useSignup = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/user/signup",
+        "https://real-estate-server-b8bv.onrender.com/api/user/signup",
         formData
       );
 

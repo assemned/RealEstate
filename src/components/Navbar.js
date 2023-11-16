@@ -51,7 +51,7 @@ const Navbar = ({ onFilterChange }) => {
             <img
               src={
                 user.logo
-                  ? `http://localhost:4000/images/${user.logo}`
+                  ? `https://real-estate-server-b8bv.onrender.com/images/${user.logo}`
                   : images.user
               }
               alt="user"

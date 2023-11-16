@@ -38,7 +38,7 @@ const PropertyPage = () => {
       }
       try {
         const response = await axios.get(
-          `http://localhost:4000/api/user/${property.user_id}`
+          `https://real-estate-server-b8bv.onrender.com/api/user/${property.user_id}`
         );
         setUserProfile(response.data);
       } catch (error) {
@@ -54,7 +54,7 @@ const PropertyPage = () => {
     }
     try {
       const response = await axios.delete(
-        `http://localhost:4000/api/properties/${id}`,
+        `https://real-estate-server-b8bv.onrender.com/api/properties/${id}`,
         { headers: { Authorization: `Bearer ${user.token}` } }
       );
       const jsonData = response.data;
@@ -76,7 +76,7 @@ const PropertyPage = () => {
               <img
                 src={
                   userProfile.logo
-                    ? `http://localhost:4000/images/${userProfile.logo}`
+                    ? `https://real-estate-server-b8bv.onrender.com/images/${userProfile.logo}`
                     : images.user
                 }
                 alt="user"
@@ -161,7 +161,7 @@ const PropertyPage = () => {
         </div>
         {property.image && (
           <img
-            src={`http://localhost:4000/images/${property.image}`}
+            src={`https://real-estate-server-b8bv.onrender.com/images/${property.image}`}
             alt="Property"
             className="w-[95%] border-4 rounded-2xl border-white shadow-lg"
           />

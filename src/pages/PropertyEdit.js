@@ -84,7 +84,7 @@ const PropertyEdit = () => {
 
     try {
       const response = await axios.patch(
-        `http://localhost:4000/api/properties/${id}`,
+        `https://real-estate-server-b8bv.onrender.com/api/properties/${id}`,
         formData,
         { headers: { Authorization: `Bearer ${user.token}` } }
       );
@@ -353,7 +353,7 @@ const PropertyEdit = () => {
                   src={
                     property.file
                       ? URL.createObjectURL(property.file)
-                      : `http://localhost:4000/images/${property.image}`
+                      : `https://real-estate-server-b8bv.onrender.com/images/${property.image}`
                   }
                   alt="input"
                   className=" w-full h-full object-contain rounded-lg"
