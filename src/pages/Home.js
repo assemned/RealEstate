@@ -85,7 +85,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-cta bg-cover min-h-[40vh] flexCenter ">
+      <div className="bg-cta bg-cover min-h-[40vh] md:min-h-[80vh] flexCenter ">
         <div className=" max-cp flexCenter max-sm:flex-col max-sm:gap-8">
           <div className=" flexStartCol h-full gap-8 flex-[130%]">
             <h2 className="h1">
