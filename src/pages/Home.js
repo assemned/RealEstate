@@ -13,7 +13,7 @@ const Home = () => {
     <section className="">
       <Navbar />
 
-      <div className="bg-bg bg-cover bg-no-repeat flexCenter min-h-[60vh] lg:h-screen w-full relative ">
+      <div className="bg-bg bg-cover bg-no-repeat flexCenter min-h-[80vh] lg:h-screen w-full relative ">
         <div className="bg-gradient-to-b from-primary-black to-transparent absolute top-0 h-1/6 w-full"></div>
         <div className="bg-gradient-to-t from-primary-black to-transparent absolute bottom-0 h-1/6 w-full"></div>
         <div className="max-cp flex justify-start items-center h-full">
